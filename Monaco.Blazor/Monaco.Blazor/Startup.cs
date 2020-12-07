@@ -52,8 +52,8 @@ namespace Monaco.Blazor
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapBlazorHub();
-                endpoints.MapFallbackToPage("/_Host");
+                endpoints.MapBlazorHub("/Blazor/_blazor");
+                endpoints.MapFallbackToPage("~/Blazor/{*clientroutes:nonfile}", "/Blazor/_Host");
             });
         }
     }
