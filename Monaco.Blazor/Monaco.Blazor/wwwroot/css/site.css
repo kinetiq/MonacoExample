@@ -181,3 +181,16 @@ app {
         display: block;
     }
 }
+
+.monaco-editor-container {
+    height: 200px;
+    border: 1px solid gray;
+}
+
+.decorationGlyphMarginClass {
+    background: red;
+}
+
+.decorationContentClass {
+    background: lightblue;
+}
